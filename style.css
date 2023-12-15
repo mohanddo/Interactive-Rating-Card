@@ -1,0 +1,104 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    transition: 200ms;
+    background-color: hsl(213, 19%, 15%);
+    border-radius: 15px;
+    width: 400px;
+    padding: 28px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600px;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 200ms;
+}
+
+.custom-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);  
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    font-size: 18px;
+    font-family: 'Overpass', sans-serif;
+    height: 50px;
+    width: 50px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.custom-radio:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    transition: 200ms;
+}
+
+input[type="radio"]:checked + .custom-radio {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.Radio-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 16px;
+    padding-left: 16px;
+}
